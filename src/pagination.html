@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <title>Fetch find</title>
+  </head>
+  <body>
+    <a href="./index.html">back</a>
+    <div class="container">
+      <form class="search-form">
+        <input type="text" name="query" />
+        <button type="submit">Search</button>
+      </form>
+      <div class="content-box"></div>
+      <button
+        class="button load-more is-hidden"
+        disabled
+        type="button"
+        data-action="load-more"
+      >
+        <span
+          class="spinner-border spinner-border-sm spinner is-hidden"
+          role="status"
+          aria-hidden="true"
+        ></span>
+        <span class="label">Show more</span>
+      </button>
+    </div>
+
+    <script src="./js/pagination.js" type="module"></script>
+  </body>
+</html>

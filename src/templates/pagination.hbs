@@ -1,0 +1,14 @@
+{{#each articles}}
+  <div class='news-card'>
+    <h2 class='title'>{{title}}</h2>
+    <div class='thumb'>
+      <img src='{{urlToImage}}' alt='{{title}}' class='card-img' />
+      <p class='description'>{{description}}</p>
+    </div>
+    <div class='content-box'>
+      <p class='text content'>{{content}}</p>
+      <p class='text author'>Author: {{author}}</p>
+    </div>
+
+  </div>
+{{/each}}

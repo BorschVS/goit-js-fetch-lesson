@@ -1,0 +1,116 @@
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  border: none;
+  box-shadow: 0 0 3 0 black;
+  outline: inherit;
+  padding: 10px;
+
+  background-color: rgba(235, 252, 255, 0.357);
+
+  font-size: 16px;
+  transition: box-shadow 250ms ease-in-out;
+}
+
+input:hover {
+  box-shadow: 0 0 4 0 black;
+}
+
+input:active,
+input:focus {
+  background-color: #fcfcfc;
+  box-shadow: inset 0 0 3 0 black;
+}
+
+button {
+  border: none;
+  background-color: rgba(235, 252, 255, 0.357);
+  box-shadow: 0 0 3 0 black;
+  outline: inherit;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+
+  box-shadow: 0 0 4 0 black;
+}
+
+button:active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 3 0 black;
+}
+
+input:focus {
+  border-color: rgb(187, 187, 255);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  margin-top: 50px;
+}
+
+.card {
+  flex-basis: calc((100% + 20px * 2) / 2);
+
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-img-top > img {
+  width: 100%;
+  object-fit: cover;
+
+  background-color: rgba(235, 252, 255, 0.357);
+  box-shadow: 0 0 3 0 black;
+
+  border: 1px solid #bbbbbb;
+}
+
+.card-body {
+  font-size: 14px;
+  padding: 10px 10px;
+  box-shadow: 0 0 3 0 black;
+
+  background-color: rgba(235, 252, 255, 0.357);
+  border-top: none;
+  flex-grow: 1;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: 18px;
+
+  margin-bottom: 10px;
+}
+
+.card-text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.card-text--center {
+  font-weight: 500;
+}
+
+.list-group-item {
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 1px solid #9b9b9b;
+}
